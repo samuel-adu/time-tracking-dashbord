@@ -20,21 +20,10 @@
     <link rel="stylesheet" href="style.css" />
 
     <title>Frontend Mentor | Time tracking dashboard</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body>
-    <main>
-      <div class="card">
+    <main class="main">
+      <div class="card user-card">
         <div class="user-info">
           <img
             src="./images/image-jeremy.png"
@@ -55,8 +44,6 @@
       </div>
 
       <div class="activity-card activity-card--work">
-        <!-- <div class="activity-card__hero">
-        </div> -->
         <img
           src="./images/icon-work.svg"
           alt="A portfoilo."
@@ -71,6 +58,100 @@
           <div class="activity-duration">
             <p class="activity-current-duration">32hrs</p>
             <p class="activity-previous-duration">Last Week - 36hrs</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="activity-card activity-card--play">
+        <img
+          src="./images/icon-play.svg"
+          alt="A portfoilo."
+          class="activity-card__icon"
+        />
+        <div class="activity-card__body">
+          <div class="activity-card__header">
+            <h2 class="activity-card__heading">Play</h2>
+            <img src="./images/icon-ellipsis.svg" alt="ellipsis" />
+          </div>
+          <div class="activity-duration">
+            <p class="activity-current-duration">10hrs</p>
+            <p class="activity-previous-duration">Last Week - 8hrs</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="activity-card activity-card--study">
+        <img
+          src="./images/icon-study.svg"
+          alt="A portfoilo."
+          class="activity-card__icon"
+        />
+
+        <div class="activity-card__body">
+          <div class="activity-card__header">
+            <h2 class="activity-card__heading">Study</h2>
+            <img src="./images/icon-ellipsis.svg" alt="ellipsis" />
+          </div>
+          <div class="activity-duration">
+            <p class="activity-current-duration">4hrs</p>
+            <p class="activity-previous-duration">Last Week - 7hrs</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="activity-card activity-card--exercise">
+        <img
+          src="./images/icon-exercise.svg"
+          alt="A portfoilo."
+          class="activity-card__icon"
+        />
+
+        <div class="activity-card__body">
+          <div class="activity-card__header">
+            <h2 class="activity-card__heading">Exercise</h2>
+            <img src="./images/icon-ellipsis.svg" alt="ellipsis" />
+          </div>
+          <div class="activity-duration">
+            <p class="activity-current-duration">4hrs</p>
+            <p class="activity-previous-duration">Last Week - 5hrs</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="activity-card activity-card--social">
+        <img
+          src="./images/icon-social.svg"
+          alt="A portfoilo."
+          class="activity-card__icon"
+        />
+
+        <div class="activity-card__body">
+          <div class="activity-card__header">
+            <h2 class="activity-card__heading">Social</h2>
+            <img src="./images/icon-ellipsis.svg" alt="ellipsis" />
+          </div>
+          <div class="activity-duration">
+            <p class="activity-current-duration">5hrs</p>
+            <p class="activity-previous-duration">Last Week - 10hrs</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="activity-card activity-card--self-care">
+        <img
+          src="./images/icon-self-care.svg"
+          alt="A portfoilo."
+          class="activity-card__icon"
+        />
+
+        <div class="activity-card__body">
+          <div class="activity-card__header">
+            <h2 class="activity-card__heading">Self Care</h2>
+            <img src="./images/icon-ellipsis.svg" alt="ellipsis" />
+          </div>
+          <div class="activity-duration">
+            <p class="activity-current-duration">2hrs</p>
+            <p class="activity-previous-duration">Last Week - 2hrs</p>
           </div>
         </div>
       </div>

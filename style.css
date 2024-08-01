@@ -66,13 +66,13 @@ img {
   border-radius: var(--border-radius);
 }
 
-.stat-buttons {
+.switch-buttons {
   padding: 1.5rem 2rem;
   display: flex;
   justify-content: space-between;
 }
 
-.stat-button {
+.switch-btn {
   display: inline-block;
   color: var(--clr-neutral-100);
   font-size: var(--text-base);
@@ -82,8 +82,8 @@ img {
   padding: 0.5rem 0.25rem;
 }
 
-.stat-button:hover,
-.stat-button:focus {
+.switch-btn:hover,
+.switch-btn:focus {
   color: var(--clr-white);
 }
 
@@ -238,7 +238,7 @@ img {
     margin-bottom: 1.5rem;
   }
 
-  .stat-buttons {
+  .switch-buttons {
     flex-direction: column;
     align-items: flex-start;
     gap: 0.5rem;

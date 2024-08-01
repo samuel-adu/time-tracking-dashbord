@@ -9,27 +9,18 @@ fetch('/data.json')
   .then((data) => {
     const defaultView = 'weekly';
     let currentView = defaultView;
-
     renderCards(data, currentView);
 
-    const dailyStatBtn = document.getElementById('daily-stat-btn');
-    const weeklyStatBtn = document.getElementById('weekly-stat-btn');
-    const monthlyStatBtn = document.getElementById('monthly-stat-btn');
+    const switchButtons = document.querySelectorAll('.switch-btn');
 
-    dailyStatBtn.addEventListener('click', function () {
-      currentView = 'daily';
-      renderCards(data, currentView);
+    switchButtons.forEach((button) => {
+      button.addEventListener('click', setCurrentView);
     });
 
-    weeklyStatBtn.addEventListener('click', function () {
-      currentView = 'weekly';
+    function setCurrentView(event) {
+      currentView = event.target.dataset.timeframe;
       renderCards(data, currentView);
-    });
-
-    monthlyStatBtn.addEventListener('click', function () {
-      currentView = 'monthly';
-      renderCards(data, currentView);
-    });
+    }
   });
 
 function renderCards(data, currentView) {

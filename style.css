@@ -49,9 +49,14 @@ img {
 }
 
 .main {
-  width: 100%;
   padding-inline: 1.5rem;
   padding-block: 4rem;
+  width: 100%;
+  display: grid;
+  gap: 1.5rem;
+}
+
+.activity-card-container {
   display: grid;
   gap: 1.5rem;
 }
@@ -112,7 +117,7 @@ img {
   font-size: var(--text-s);
 }
 
-/* user section ends */
+/* activity card start */
 
 .activity-card {
   border-radius: var(--border-radius);
@@ -212,13 +217,15 @@ img {
   .main {
     max-width: 1110px;
     grid-template-columns: repeat(4, 1fr);
-    gap: 1.5rem;
+  }
+
+  .activity-card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column: 2/5;
   }
 
   /* user section */
-  .user-card {
-    grid-row: 1 / 3;
-  }
 
   .user-info {
     flex-direction: column;
@@ -231,6 +238,7 @@ img {
     align-items: flex-start;
     gap: 0.5rem;
     padding: 1.5rem 1.5rem 2rem;
+    padding: 1.5rem;
   }
 
   .activity-card__header {
@@ -245,6 +253,6 @@ img {
 
   .footer {
     position: absolute;
-    bottom: 4rem;
+    bottom: 0;
   }
 }

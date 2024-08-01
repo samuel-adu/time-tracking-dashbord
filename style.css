@@ -233,6 +233,11 @@ img {
     padding-bottom: 5.5rem;
   }
 
+  .user-image {
+    width: 80px;
+    margin-bottom: 1.5rem;
+  }
+
   .stat-buttons {
     flex-direction: column;
     align-items: flex-start;
@@ -243,6 +248,10 @@ img {
 
   .activity-card__header {
     margin-bottom: 2rem;
+  }
+
+  .activity-current-duration {
+    font-size: 3.25rem;
   }
 
   .activity-duration {
